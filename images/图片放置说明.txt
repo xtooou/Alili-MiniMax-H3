@@ -1,0 +1,8 @@
+把你自己准备的截图放进这个 images/ 文件夹，文件名对应 README「图片展示」一节里的占位即可自动生效：
+
+- preview-integration.png   条件节点面板
+- preview-sampling.png      采样 / 分段工作流
+- preview-upscale.png       潜空间放大
+- preview-optimizer.png     提示词优化
+
+（文件名可随意改，只要和 README 里的引用路径一致即可。）

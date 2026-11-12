@@ -1,0 +1,152 @@
+{
+  "AliliMiniMaxH3Integration": {
+    "display_name": "MiniMax-H3 视频工作台",
+    "inputs": {
+      "clip_name": {
+        "name": "CLIP模型"
+      },
+      "video_vae_name": {
+        "name": "视频 VAE"
+      },
+      "audio_vae_name": {
+        "name": "音频 VAE"
+      },
+      "aspect": {
+        "name": "宽高比例",
+        "options": {
+          "adaptive": "自适应",
+          "16:9": "16:9",
+          "9:16": "9:16",
+          "3:2": "3:2",
+          "2:3": "2:3",
+          "4:3": "4:3",
+          "3:4": "3:4",
+          "1:1": "1:1",
+          "21:9": "21:9"
+        }
+      },
+      "megapixels": {
+        "name": "百万像素"
+      },
+      "prompt_override": {
+        "name": "提示词"
+      },
+      "duration_seconds": {
+        "name": "时长（秒）"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": ">"
+      }
+    }
+  },
+  "AliliMiniMaxH3IntegrationAdapter": {
+    "display_name": "MiniMax-H3 适配器",
+    "inputs": {
+      "integration": {
+        "name": "<"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "正面条件"
+      },
+      "1": {
+        "name": "音视频潜空间"
+      },
+      "2": {
+        "name": "视频 VAE"
+      },
+      "3": {
+        "name": "音频 VAE"
+      },
+      "4": {
+        "name": "模型序号"
+      },
+      "5": {
+        "name": "原始音频"
+      },
+      "6": {
+        "name": "是否原声"
+      },
+      "7": {
+        "name": "条件提示词"
+      },
+      "8": {
+        "name": "媒体映射 JSON"
+      },
+      "9": {
+        "name": "报告"
+      }
+    }
+  },
+  "AliliMiniMaxH3DualClock": {
+    "display_name": "MiniMax-H3 双时钟",
+    "inputs": {
+      "model": {
+        "name": "模型"
+      },
+      "av_latent": {
+        "name": "音视频潜空间"
+      },
+      "steps": {
+        "name": "步数"
+      },
+      "shift_video": {
+        "name": "视频偏移"
+      },
+      "shift_audio": {
+        "name": "音频偏移"
+      },
+      "sampler_name": {
+        "name": "采样器"
+      },
+      "scheduler": {
+        "name": "调度器"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "模型"
+      },
+      "1": {
+        "name": "采样器"
+      },
+      "2": {
+        "name": "Sigmas"
+      }
+    }
+  },
+  "AliliMinimaxH3LatentUpscalerGH": {
+    "display_name": "Minimax H3 Latent 分块放大",
+    "inputs": {
+      "av_latent": {
+        "name": "av_latent"
+      },
+      "model_name": {
+        "name": "放大模型"
+      },
+      "mode": {
+        "name": "放大模式"
+      },
+      "align": {
+        "name": "对齐像素"
+      },
+      "force_unload": {
+        "name": "强制卸载模型"
+      },
+      "device": {
+        "name": "设备"
+      },
+      "precision": {
+        "name": "精度"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "AV_Latent"
+      }
+    }
+  }
+}

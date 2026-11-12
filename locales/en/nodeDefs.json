@@ -1,0 +1,152 @@
+{
+  "AliliMiniMaxH3Integration": {
+    "display_name": "MiniMax-H3 Integration",
+    "inputs": {
+      "clip_name": {
+        "name": "CLIP model"
+      },
+      "video_vae_name": {
+        "name": "video VAE"
+      },
+      "audio_vae_name": {
+        "name": "audio VAE"
+      },
+      "aspect": {
+        "name": "aspect ratio",
+        "options": {
+          "adaptive": "adaptive",
+          "16:9": "16:9",
+          "9:16": "9:16",
+          "3:2": "3:2",
+          "2:3": "2:3",
+          "4:3": "4:3",
+          "3:4": "3:4",
+          "1:1": "1:1",
+          "21:9": "21:9"
+        }
+      },
+      "megapixels": {
+        "name": "megapixels"
+      },
+      "prompt_override": {
+        "name": "prompt"
+      },
+      "duration_seconds": {
+        "name": "duration (seconds)"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": ">"
+      }
+    }
+  },
+  "AliliMiniMaxH3IntegrationAdapter": {
+    "display_name": "MiniMax-H3 Adapter",
+    "inputs": {
+      "integration": {
+        "name": "<"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "positive"
+      },
+      "1": {
+        "name": "AV latent"
+      },
+      "2": {
+        "name": "video VAE"
+      },
+      "3": {
+        "name": "audio VAE"
+      },
+      "4": {
+        "name": "model number"
+      },
+      "5": {
+        "name": "mux audio"
+      },
+      "6": {
+        "name": "is original audio"
+      },
+      "7": {
+        "name": "conditioned prompt"
+      },
+      "8": {
+        "name": "media map JSON"
+      },
+      "9": {
+        "name": "report"
+      }
+    }
+  },
+  "AliliMiniMaxH3DualClock": {
+    "display_name": "MiniMax H3 Dual Clock",
+    "inputs": {
+      "model": {
+        "name": "model"
+      },
+      "av_latent": {
+        "name": "AV latent"
+      },
+      "steps": {
+        "name": "steps"
+      },
+      "shift_video": {
+        "name": "video shift"
+      },
+      "shift_audio": {
+        "name": "audio shift"
+      },
+      "sampler_name": {
+        "name": "sampler"
+      },
+      "scheduler": {
+        "name": "scheduler"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "model"
+      },
+      "1": {
+        "name": "sampler"
+      },
+      "2": {
+        "name": "sigmas"
+      }
+    }
+  },
+  "AliliMinimaxH3LatentUpscalerGH": {
+    "display_name": "Minimax H3 Latent Upscaler",
+    "inputs": {
+      "av_latent": {
+        "name": "AV_Latent"
+      },
+      "model_name": {
+        "name": "Upscale Model"
+      },
+      "mode": {
+        "name": "Upscale Mode"
+      },
+      "align": {
+        "name": "Pixel Alignment"
+      },
+      "force_unload": {
+        "name": "Force Unload Model"
+      },
+      "device": {
+        "name": "Device"
+      },
+      "precision": {
+        "name": "Precision"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "AV_Latent"
+      }
+    }
+  }
+}
