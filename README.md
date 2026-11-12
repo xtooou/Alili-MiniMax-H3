@@ -63,7 +63,7 @@
 - 调用 LLM 把一句话 / 参考图扩写成 MiniMax H3 生产级提示词；支持系统提示词自动构造**六大分区 / 对白 `<d>` / 主体 `(S1)` / 分镜 `[Shot N]`** 等严格结构。
 - 内置多平台 API 客户端（`h3_api.py`）：**DeepSeek / SiliconFlow / Gemini / 阿里云百炼(通义千问) / OpenAI / OpenRouter / 智谱 GLM / Ollama / RunningHub / 自定义(OpenAI 兼容)**。
 - 输出语言可选**中文 / English**；异步任务 + 取消，不阻塞界面。
-- 凭据统一存于 `~/.ai_cache/ai_api_config.json`（与 Alili-Toolbox 共享同款客户端）。
+- 凭据统一存于 `~/.ai_cache/ai_api_config.json`（与 Alili-Image-Workbench 共享同款客户端）。
 
 ### 🔗 网页⇄节点联动（适配器）
 
